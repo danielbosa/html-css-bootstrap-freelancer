@@ -2,26 +2,119 @@
     border: 2px solid red;
 }
 
+body{
+    background-color: white;
+}
+
 :root {
 	--color-bg-1: #2c3e50;
 	--color-bg-2: #1abc9c;
 	--color-bg-3: #3a546d;
 }
 
-
 header{
     background-color: var(--color-bg-1);
 }
 
+
+/*|||--- MAIN ---|||*/
 .odd{
     background-color: var(--color-bg-2);
 }
 
+/* HERO */
+
+#hero img{
+    width: 300px;
+}
+
+#hero h1{
+    font-size: calc(2rem + 1.5vw);
+}
+
+#hero h3{
+    font-size: calc(1.1rem + .6vw);
+}
+
+
+/* PORTFOLIO */
+
+#portfolio h2{
+    font-size: calc(1.4rem + .9vw);
+}
+
+.card{
+    border: 0px;
+    overflow: hidden;
+}
+
+.card>img{
+    border-radius: 10px;
+}
+
+/* ABOUT */
+
+/* CONTACT */
+
+#contact form input,
+#contact form textarea{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid lightslategray;
+    width: 100%;
+}
+
+/* FOOTER */
+
 #footer-top{
     background-color: var(--color-bg-3);
+}
+
+#footer-top li a{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 12px;
+    width: 10px;
+    height: 10px;
+}
+
+#footer-top li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#footer-top li a i{
+    color: white;
+    vertical-align: middle; 
+    text-align: center;
+}
+
+/* centro ul recuperando i px di padding delle a con un margine negativo */
+#footer-top ul{
+    margin-left: -10px;
 }
 
 #footer-bottom{
     background-color: var(--color-bg-1);
 }
 
+#footer-bottom a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media screen and (min-width: 768px){
+    #hero img{
+        width: 350px;
+    }
+    
+    #hero h1{
+        font-size: calc(2rem + 1.5vw);
+    }
+
+    #footer-top>.container{
+        display: flex;
+    }
+}
