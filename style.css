@@ -1,0 +1,26 @@
+.db-debug{
+    border: 2px solid red;
+}
+
+:root {
+	--color-bg-1: #2c3e50;
+	--color-bg-2: #1abc9c;
+	--color-bg-3: #3a546d;
+}
+
+
+header{
+    background-color: var(--color-bg-1);
+}
+
+.odd{
+    background-color: var(--color-bg-2);
+}
+
+#footer-top{
+    background-color: var(--color-bg-3);
+}
+
+#footer-bottom{
+    background-color: var(--color-bg-1);
+}
